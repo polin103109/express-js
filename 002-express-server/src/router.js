@@ -17,4 +17,7 @@ router.get("/person", (req, res) => {
     },
   });
 });
-module.exports = router;
+function configureRoutes(server) {
+  server.use("/api", router);
+}
+module.exports = { configureRoutes };
