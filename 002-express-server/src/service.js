@@ -1,9 +1,5 @@
-const getUser = () => ({
-  name: "sabrina",
-  age: "24",
-  address: {
-    city: "Chittagong",
-    country: "Bangladesh",
-  },
-});
+const data = require("./data");
+
+const getUser = () => data.users;
+
 module.exports = { getUser };
