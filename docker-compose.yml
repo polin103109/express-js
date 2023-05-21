@@ -1,0 +1,11 @@
+version: "3.9"  # optional since v1.27.0
+services:
+  node-server:
+    build: 
+      context: 003-nodemon-docker
+      dockerfile: Dockerfile
+    ports:
+      - "7001:7000"  #local port:docker container port
+
+  
+  
